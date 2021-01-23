@@ -1,11 +1,12 @@
 {
-  "name": "ethers.js-bigquery",
-  "version": "1.0.0",
+  "name": "ethersv5-bigquery",
+  "bin": "dist/*.js",
+  "version": "1.1.0",
   "scripts": {
     "build": "webpack --config webpack.config.js"
   },
   "dependencies": {
-    "ethers": "^4.0.44"
+    "ethers": "^5.0.26"
   },
   "devDependencies": {
     "webpack": "^4.41.5",

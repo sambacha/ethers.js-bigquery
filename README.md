@@ -50,7 +50,7 @@ LIMIT 100;
 ```
 
 The above query returns decoded CryptoKitty transfer events. You can run it by pasting into the BigQuery console SQL
-editor https://console.cloud.google.com/bigquery. 
+editor https://console.cloud.google.com/bigquery.
 
 ```
 CREATE TEMP FUNCTION
@@ -85,8 +85,8 @@ CREATE TEMP FUNCTION
     };
 
     var interface_instance = new ethers.utils.Interface([CRYPTOKITTY_CREATE_SALE_AUCTION]);
-    
-    // You might need to wrap with try-catch here as transaction input is user provided data and might not follow abi. 
+
+    // You might need to wrap with try-catch here as transaction input is user provided data and might not follow abi.
     var parsedTransaction = interface_instance.parseTransaction({data: data});
 
     return parsedTransaction.args;
@@ -105,8 +105,9 @@ LIMIT 100;
 
 The above query returns decoded createSaleAuction() transactions inputs.
 
-To include internal transactions use `bigquery-public-data.crypto_ethereum.traces` instead of 
+To include internal transactions use `bigquery-public-data.crypto_ethereum.traces` instead of
 `bigquery-public-data.crypto_ethereum.transactions`.
 
 ## Credits
+
 - https://github.com/Arachnid/ethjs-abi-bigquery
